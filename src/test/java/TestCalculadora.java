@@ -64,5 +64,12 @@ public class TestCalculadora {
     int result = calculadora.dividir(-5, -5);
     assertEquals( 1, result);
   }
-  
+
+  @Test
+  @DisplayName("Soma e multiplica")
+  void somaEMultiplica(){
+    int somaResult = calculadora.somar(6, 6);
+    int result = calculadora.multiplicar(somaResult, 6);
+    assertEquals( 72, result);
+  }
 }
